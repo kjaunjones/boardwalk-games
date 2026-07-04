@@ -4,13 +4,26 @@
 /*css variables*/
 :root {
     --font-primary: "Inter", sans-serif;
-    --font-heading: "Macondo", cursive;
+    --font-secondary: "Macondo", cursive;
+    --primary-color: #3a2620; /* darkbrown*/
+    --secondary-color: #aa9581; /* lightbrown*/
+    --highlight-color: #316a8e; /*blue*/
+    --highlight-color-light: #7a9fc2; /*lightblue*/
+
 }
 
+/*global styles*/
 body {
-    font-family: "Inter", sans-serif;
+    font-family: var(--font-primary);
 }
 
-h1 {
-    font-family: "Macondo", cursive;
+h1,
+h2,
+h3 {
+    font-family: var(--font-secondary);
+    color: var(--primary-color);
+}
+
+.sub-heading-color {
+    color: var(--highlight-color);
 }
